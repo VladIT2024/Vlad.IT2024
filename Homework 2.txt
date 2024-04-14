@@ -56,6 +56,14 @@ public static void main(String[] args) throws InterruptedException {
 		 chromedriver.findElement(By.linkText("http://www.instante.justice.md/")).click();
 	*/ 
 		
+	/*
+		//By PartialLinkText
+		chromedriver.get("https://europass.europa.eu/ro/create-europass-cv");
+		chromedriver.manage().window().maximize();
+		chromedriver.findElement(By.xpath("//*[@id=\"cookie-consent-banner\"]/div/div/div[2]/a[2]")).click();
+		chromedriver.findElement(By.partialLinkText("EURES")).click();
+		chromedriver.findElement(By.xpath("//*[@id=\"cookie-consent-banner\"]/div/div/div[2]/a[2]")).click();
+	*/
 			
 	}
 
