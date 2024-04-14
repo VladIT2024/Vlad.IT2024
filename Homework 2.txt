@@ -1,0 +1,62 @@
+
+// Homework 2 (14.04.2024)
+// Cocieru Vlad
+
+package ui;
+import org.openqa.selenium.By;
+import org.openqa.selenium.ElementClickInterceptedException;
+import org.openqa.selenium.chrome.ChromeDriver;
+import io.github.bonigarcia.wdm.WebDriverManager;
+public class HomeWork14042024 {
+public static void main(String[] args) throws InterruptedException {
+
+		WebDriverManager.chromedriver().setup();
+		ChromeDriver chromedriver = new ChromeDriver();
+
+    /*
+		 //By Id
+		 chromedriver.get("https://metro.md/ro");
+		 chromedriver.manage().window().maximize();
+		 chromedriver.findElement(By.xpath("//*[@id=\"footer\"]/div/div[3]/div/div/div/div/div/div[2]/button")).click();
+		 Thread.sleep(2000);
+		 chromedriver.findElement(By.id("site-header-input")).click();
+		 Thread.sleep(2000);
+		 chromedriver.findElement(By.xpath("//*[@id=\"c6962e166c6b84fb5a1f57382f5ef3c4d\"]/div/div[1]/div/div[2]/div[2]/div[1]/div[1]")).click(); 
+		 chromedriver.findElement(By.id("wrapper")).click();
+		 chromedriver.findElement(By.id("next_slide")).click();
+		 chromedriver.findElement(By.id("next_slide")).click();
+		 chromedriver.findElement(By.id("next_slide")).click();
+	*/
+
+	/*
+		 //By Class 
+		 chromedriver.get("https://gismeteo.md");
+		 chromedriver.manage().window().maximize();
+ 		 Thread.sleep(3000);
+		 chromedriver.findElement(By.className("current-lang")).click();
+		 Thread.sleep(3000);
+		 chromedriver.findElement(By.xpath("//*[@id=\"dropdown-menu-lang\"]/a")).click();
+		 chromedriver.findElement(By.xpath("/html/body/footer/div[1]/div[2]/a")).click();
+     */  	 
+
+	/*	
+		 //By Class 
+		 chromedriver.get("https://www.asp.gov.md/ro");
+		 chromedriver.manage().window().maximize();
+		 Thread.sleep(2000);
+		 chromedriver.findElement(By.className("icon-mdelivery")).click();
+	*/	 
+		
+	/*		
+		//By Link
+		 chromedriver.get("https://aaij.justice.md/portal-national-al-instantelor/");
+		 chromedriver.manage().window().maximize();
+		 Thread.sleep(2000);
+		 chromedriver.findElement(By.className("sc-closer")).click();
+		 chromedriver.findElement(By.linkText("http://www.instante.justice.md/")).click();
+	*/ 
+		
+			
+	}
+
+}
