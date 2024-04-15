@@ -65,6 +65,17 @@ public static void main(String[] args) throws InterruptedException {
 		chromedriver.findElement(By.xpath("//*[@id=\"cookie-consent-banner\"]/div/div/div[2]/a[2]")).click();
 	*/
 			
+	/*	
+		// By Send Keys
+		chromedriver.get("https://www.rabota.md/ro/"); 
+		chromedriver.manage().window().maximize();
+		chromedriver.findElement(By.xpath("//*[@id=\"search_container\"]/div/div[4]/button[2]")).click();
+		chromedriver.findElement(By.id("pageSearchInput")).sendKeys("QA"); 
+		Thread.sleep(2000);
+		chromedriver.findElement(By.xpath("//*[@id=\"page_search_container\"]/div/div[4]/button[2]")).click();
+	*/
+
+
 	}
 
 }
