@@ -1,0 +1,156 @@
+package ui;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class Homework3 {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+
+				
+		/*		
+						//XPathAbsoluteLocator
+		
+		WebDriverManager.chromedriver().setup();
+		ChromeDriver driver = new ChromeDriver();
+		
+		driver.get("https://elody.md/");
+		driver.manage().window().maximize();
+		Thread.sleep(4000);
+								//prin intermediul CopyXPath
+		//driver.findElement(By.xpath("//*[@id=\"post-12172\"]/div/div/div/div[4]/div/div[1]/div/span/a/img")).click();  
+								// prin intermediul XPathAbsoluteLocator
+		driver.findElement(By.xpath("/html/body/div/div/main/div/section/div/div/div/div/div/div/div/div/span/a/img")).click();
+		Thread.sleep(5000);
+		driver.quit();
+		*/
+		
+		/*
+						//XPathRelativeLocator
+		
+		WebDriverManager.chromedriver().setup();
+		ChromeDriver driver = new ChromeDriver();
+		
+		driver.get("https:/www.nr1.md/ro");
+		driver.manage().window().maximize();
+		Thread.sleep(4000);
+						//prin intermediul CopyXPath
+		//driver.findElement(By.xpath("//*[@id=\"main\"]/div/div/div[1]/div[3]/ul/li[13]/a")).click();
+						//prin intermediul XPathRelativeLocator
+		driver.findElement(By.xpath("//ul[@class='menu_content']")).click();
+		Thread.sleep(5000);
+		driver.quit();
+	    */
+		
+		/*
+						//Xpath starts-with !!! La mine acesta nu ruleaza!!!
+						
+		WebDriverManager.chromedriver().setup();
+		ChromeDriver driver = new ChromeDriver();
+		
+		driver.get("https://gefest.md/ro/");
+		driver.manage().window().maximize();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("/html/body/div[3]/div/div[2]/form/div/button")).click();
+						//prin intermediul CopyXPath
+		//driver.findElement(By.className("icon-cart")).click();    
+						//prin intermediul Xpath starts-with 
+		//driver.findElement(By.xpath("//span[starts-with(@id,'num cart-')]")).click();
+		Thread.sleep(2000);
+		driver.quit();
+		*/
+				
+		/*
+						//Xpath ends-with !!! Acesta tot nu ruleaza!!!
+				
+		WebDriverManager.chromedriver().setup();
+		ChromeDriver driver = new ChromeDriver();
+		
+		driver.get("https://gefest.md/ro/");
+		driver.manage().window().maximize();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("/html/body/div[3]/div/div[2]/form/div/button")).click();
+						//prin intermediul CopyXPath
+		//driver.findElement(By.xpath("//*[@id=\"header\"]/div[1]/div[5]/div[2]/a[4]/span")).click();   
+						//prin intermediul Xpath ends-with 
+		driver.findElement(By.xpath("//span[ends-with(@id,'-products')]")).click();
+		Thread.sleep(2000);
+		driver.quit();
+		*/
+				
+		/*
+						// XPathContains
+		
+		WebDriverManager.chromedriver().setup();
+		ChromeDriver driver = new ChromeDriver();
+		
+		driver.get("https://www.metro.md/");
+		driver.manage().window().maximize();
+		driver.findElement(By.xpath("//*[@id=\"footer\"]/div/div[3]/div/div/div/div/div/div[2]/button")).click();
+		Thread.sleep(4000);
+						//prin intermediul CopyXPath
+		//driver.findElement(By.xpath("//*[@id=\"ca628449eed97496ba017b58faae19c19\"]/div/div/div[2]/div[2]/a/span/span/span[1]")).click();
+						//prin intermediul XPathContains
+		driver.findElement(By.xpath("//span[contains(@class,'3rd')]")).click();
+		//driver.findElement(By.xpath("//a[contains(@class,'after')]")).click();
+		Thread.sleep(5000);
+		driver.quit();
+		*/
+		
+		/*
+						//Text
+		
+		WebDriverManager.chromedriver().setup();
+		ChromeDriver driver = new ChromeDriver();
+				
+		driver.get("https://gefest.md/");
+		driver.manage().window().maximize();
+		Thread.sleep(4000);
+						//prin intermediul CopyXPath
+		//driver.findElement(By.xpath("/html/body/div[3]/div/div[2]/form/div/button")).click();
+						//prin intermediul text
+		driver.findElement(By.xpath("//a[text()='Livrarea']")).click();
+		Thread.sleep(5000);
+		driver.quit();
+		*/
+		
+		/*
+						//AND
+						 
+		WebDriverManager.chromedriver().setup();
+		ChromeDriver driver = new ChromeDriver();
+		
+		driver.get("https://farmacie.md/ro/");
+		driver.manage().window().maximize();
+		Thread.sleep(4000);
+						//prin intermediul CopyXPath
+		//driver.findElement(By.xpath("//*[@id=\"js-search-box\"]/form/span/input")).sendKeys("Paracetamol");
+						// prin intermediul AND
+		driver.findElement(By.xpath("//input[@name='query' and @spellcheck='false']")).sendKeys("Citramon");
+		Thread.sleep(5000);
+		driver.quit();
+		 */
+		
+		/*
+						//OR
+		WebDriverManager.chromedriver().setup();
+		ChromeDriver driver = new ChromeDriver();
+		
+		driver.get("https://ff.md/");
+		driver.manage().window().maximize();
+		Thread.sleep(4000);
+						//prin intermediul CopyXPath
+		//driver.findElement(By.xpath("//*[@id=\"shopify-section-header\"]/section/header/div/div/div[1]/form/div[1]/div/div[1]/input")).sendKeys("Mezim");
+						//prin intermediul OR
+		driver.findElement(By.xpath("//input[@name='q' or @aria-label='Cauta...']")).sendKeys("Cardiomagnil");
+		Thread.sleep(5000);
+		driver.quit();
+		*/
+		
+	}
+	
+
+}
