@@ -1,0 +1,132 @@
+package ui;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class Homework4 {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		
+		/*
+		WebDriverManager.chromedriver().setup();
+		ChromeDriver driver = new ChromeDriver();
+										// XPath
+		driver.get("https://olx.ro");				
+		Thread.sleep(4000);
+		System.out.print(" 1. am accesat site-ul www.olx.ro : ");
+		driver.manage().window().maximize();
+		Thread.sleep(4000);
+		System.out.print(" 2. am marit pagina site-ului www.olx.ro :");
+		driver.findElement(By.xpath("//*[@id=\"onetrust-accept-btn-handler\"]")).click();
+		Thread.sleep(4000);
+		System.out.print(" 3. am dat click pe butonul accept cookie folosind locatorul CopyXPath :");
+		driver.findElement(By.xpath("/html/body/div/div/div/div/div/div/div/a/span")).click();
+		Thread.sleep(4000);
+		System.out.print(" 4. am accesat categoria auto, moto si ambarcatiuni folosind XPathAbsoluteLocator :");
+		driver.findElement(By.xpath("//a[@class='css-f0mzyq']")).click();
+		Thread.sleep(4000);
+		System.out.print(" 5. am accesat subcategoria autoturisme folosind XPathRelativeLocator :");
+	    driver.findElement(By.xpath("//input[starts-with(@class,'css-ygy')]")).sendKeys("5000");
+		Thread.sleep(4000);
+		System.out.print(" 6. am introdus valoarea '5000' la placeholder-ul 'De la' din categoria 'Pret' folosind Stars-with :");
+		driver.findElement(By.xpath("//input[contains(@aria-labelledby,'range-to-input-label')]")).sendKeys("18000");
+		Thread.sleep(4000);
+		System.out.print(" 7. am introdus valoarea '18000' la placeholder-ul 'pâna la' din categoria 'Pret' folosind XPathContains :");
+		driver.findElement(By.xpath("//input[@data-testid='location-search-input' and @aria-label='Toată țara']")).sendKeys("Iasi");
+		Thread.sleep(4000);
+		System.out.print(" 8. am tapat textul 'Iasi' la placeholder-ul 'Toată țara' folosind AND :");
+		driver.findElement(By.xpath("//button[@name='searchBtn' or @class='css-1xla5xw']")).click();
+		Thread.sleep(4000);
+		System.out.print(" 9. am dat click pe butonul 'Căutare' folosind OR :");
+		driver.findElement(By.xpath("//a[text()='Acura']")).click();
+		Thread.sleep(4000);
+		System.out.print(" 10. am selectat modelul 'Acura' din subcategoriile de marci propuse, folosind Text :");
+												//css.Selector
+		driver.findElement(By.cssSelector("#hydrate-root > header > div > a > span > span.css-13xlyet")).click();
+		Thread.sleep(4000);
+		System.out.print(" a. am dat click pe loggo-ul 'Olx'  :");
+		driver.findElement(By.cssSelector("input#search")).click();
+		Thread.sleep(4000);
+		System.out.print(" b. am dat click pe bara de cautare 'Ce anume cauți' utilizind ID atribute  :");
+		driver.findElement(By.cssSelector("a.css-2txnih")).click();
+		Thread.sleep(4000);
+		System.out.print(" c. am dat click pe butonul 'Adauga anunt nou' utilizind Class atribute  :");
+		driver.findElement(By.cssSelector("button.css-vz18bh")).click();
+		Thread.sleep(4000);
+		System.out.print(" d. am dat click pe butonul 'Creează un cont' utilizind Class atribute  :");
+		driver.findElement(By.cssSelector("input.css-fh8x5v")).click();
+		Thread.sleep(4000);
+		System.out.print(" e. am bifat 'acordul privind folosirea mijloacelor de comunicare electornice' utilizind Class atribute  :");
+		driver.findElement(By.cssSelector("input.css-2os53m")).sendKeys("ion@mail.ru");
+		Thread.sleep(4000);
+		System.out.print(" f. am tapat in placeholder-ul 'Adresa ta de e-mail' textul 'ion@mail.ru' utilizind Class atribute  :");
+		driver.findElement(By.cssSelector("input.css-1kzly1g")).sendKeys("32323232");
+		Thread.sleep(4000);
+		System.out.print(" g. am tapat in placeholder-ul 'parola' textul '32323232' utilizind Class atribute  :");
+		driver.findElement(By.cssSelector("svg[data-testid='eye-yes']")).click();
+		Thread.sleep(4000);
+		System.out.print(" h. am dat click pe pictograma 'eyes' utilizind Other atributes  :");
+		driver.findElement(By.cssSelector("button[tabindex='0']")).click();
+		Thread.sleep(4000);
+		System.out.print(" i. am dat click pe butonul 'Intră în cont' utilizind Other atributes  :");
+		driver.findElement(By.cssSelector("input[type='email']")).sendKeys("testare@mail.ru");
+		Thread.sleep(4000);
+		System.out.print(" j. am tapat in placeholder-ul 'Adresa ta de e-mail' textul 'testare@mail.ru' utilizind Other atributes  :");
+		driver.findElement(By.cssSelector("input[name='password']")).sendKeys("QWERTY");
+		Thread.sleep(4000);
+		System.out.print(" k. am tapat in placeholder-ul 'parola' textul 'QWERTY' utilizind Other atributes  :");
+		driver.findElement(By.cssSelector("svg[fill='none']")).click();
+		Thread.sleep(4000);
+		System.out.print(" l. am dat click pe pictograma 'eyes' utilizind Other atributes  :");
+		driver.findElement(By.cssSelector("button[data-testid='login-submit-button'][type='submit']")).click();
+		Thread.sleep(4000);
+		System.out.print(" m. am dat click pe butonul 'Intră în cont' utilizind Multiple Atributes  :");
+		driver.findElement(By.cssSelector("a.css-19pd575[data-testid='terms-conditions-link'][rel='noopener noreferrer']")).click();
+		Thread.sleep(5000);
+		System.out.print(" n. am dat click pe butonul/textul 'Termenii si conditiile site-ului' utilizind Multiple Atributes  :");
+		driver.quit();
+		*/
+								//Partea a-2-a
+		/*
+		WebDriverManager.chromedriver().setup();
+		ChromeDriver driver = new ChromeDriver();
+										// cssSelector
+		driver.get("https://business.olx.ro/");				
+		Thread.sleep(4000);
+		System.out.print(" 1. am accesat site-ul www.business.olx.ro : ");
+		driver.manage().window().maximize();
+		Thread.sleep(4000);
+		System.out.print(" 2. am marit pagina site-ului www.business.olx.ro  :");
+		driver.findElement(By.cssSelector("button[id^='onetrust-accept-b']")).click();
+		Thread.sleep(4000);
+		System.out.print(" 3. am dat click pe butonul ' I Accept' folosind prefix substring:");
+		driver.findElement(By.cssSelector("a[href$='.ro/servicii/']")).click();
+		Thread.sleep(4000);
+		System.out.print(" 4. am dat click pe butonul 'Servicii' folosind suffix substring:");
+		driver.findElement(By.cssSelector("li[class*='menu-item-object-page']")).click();
+		Thread.sleep(4000);
+		System.out.print(" 5. am dat click pe butonul 'Bunuri' folosind matching substring:");
+		driver.findElement(By.cssSelector("div[class='elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-e38188f']>div")).click();
+		Thread.sleep(4000);
+		System.out.print(" 6. am dat click pe butonul 'Începe să vinzi' folosind Direct Child :");
+		driver.findElement(By.cssSelector("button[class='css-1w1v00v'] span")).click();
+		Thread.sleep(4000);
+		System.out.print(" 7. am dat click pe butonul 'Ai uitat parola?' folosind Subchild :");
+		driver.findElement(By.cssSelector("button[type='submit'] span span")).click();
+		Thread.sleep(4000);
+		System.out.print(" 8. am dat click pe butonul 'Modifica' folosind Subchild :");
+		driver.findElement(By.cssSelector("div[class='css-1a74nwz']>div>div>input")).sendKeys("In Africa");
+		Thread.sleep(4000);
+		System.out.print(" 9. am tapat in placeholder-ul 'Unde să trimitem codul?' textul 'In Africa' folosind Direct child :");
+		driver.quit();
+		*/
+		
+		
+	}
+	
+}
