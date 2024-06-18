@@ -1,0 +1,23 @@
+Feature: Plasarea unei comezi
+	Scenariu 1: Utilizatorul poate plasa o comandă
+	Given Utilizatorul deține calculator, deține un cont și este logat, se află pe pagina principală a site-ului la compartimentul ”Casa si gradina” 
+		When Utiliatorul dă click pe categoria ”Iluminat” 
+		And Utilizatorul face scroll în jos
+		And Utilizatorul alege și da click pe Stegher Priza cu dulie/Fasung E27 si Intrerupator
+		And Utilizatorul face scroll in jos
+		And Utilizatorul dă click pe butonul ”Cumpără cu livrare”
+		And Utilizatorul alege opțiunea ”FAN Courier”
+		And Utilizatorul face scroll în jos
+		And Utilizatorul completează placeholder-ul ”Prenume*” cu textul ”Pentru”
+		And Utilizatorul completează placeholder-ul ”Nume” cu textul ”Testare”
+		And Utilizatorul completează placeholder-ul ”E-mail*” cu textul pragmaticus@mail.ru
+		And Utilizatorul completează placeholder-ul ”număr de telefon*” cu textul ”+ 40 721596871”
+		And Utilizatorul completează placeholder-ul ”Adresă*” cu textul ”piata unirii 2”
+		And Utilizatorul completează placeholder-ul ”Localitate*” cu textul ”Iasi”
+		And Utilizatorul selecteaza din localitățile oferite localitatea ”Iasi/Iasi” 
+		And Utilizatorul da click pe butonul ”Continuă”
+		And Utilizatorul face scroll în jos
+		And Utilizatorul da click pe butonul ”Plasează comanda”
+Then Utilizatorul va vedea într-o fereastră nouă mesajul ”Comandă plasată” cu informațiile necesare și utile iar în partea dreaptă a pagii este prezentat produsul selectat
+ 
+
