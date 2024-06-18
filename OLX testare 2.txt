@@ -1,0 +1,46 @@
+package testarefinala;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class Olx {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+
+		WebDriverManager.chromedriver().setup();
+		System.out.println("Setarea driver-ului Chrome");
+		WebDriver driver = new ChromeDriver();
+		System.out.println("Initializarea WebDriver");
+		
+		driver.get("https://www.olx.ro/");
+		System.out.println("Accesarea URL-ului dorit, utilizindu-se metoda 'get' ");
+		driver.manage().window().maximize();
+		System.out.println("Maximizarea paginii, utilizindu-se metoda 'manage' ");
+		driver.findElement(By.xpath("//*[@id=\"onetrust-accept-btn-handler\"]")).click();
+		driver.findElement(By.xpath("//*[@id=\"hydrate-root\"]/header/div/div/div[2]/div[1]/a")).click();
+		// aici trebuia cu drop douw
+		driver.findElement(By.xpath("//*[@id=\"hydrate-root\"]/header/div/div/div[2]/div[2]/ul[1]/li[3]/a")).click();
+		//aici trebuia scroll
+		
+		driver.findElement(By.xpath("//*[@id=\"body-container\"]/div/div/div[2]/div/a[2]")).click();
+		System.out.println("da click pe butonul vazi toate comezile ");
+		driver.findElement(By.xpath("//*[@id=\"body-container\"]/div/div/div/div/div/div[3]/div[1]/div/div[2]/div[2]/div[2]/div/button[2]/div/div[1]")).click();
+		System.out.println("Click pe butonul Anulează");
+		
+		WebElement radio = driver.findElement(By.xpath("/html/body/div[9]/div/div/div/div/div[3]/label/span"));
+		System.out.println(radio.isSelected() + "selectam optiunea 'Am găsit același produs la un preț mai mic'  ");
+		radio.click();
+		
+		
+		
+		
+		
+		
+	}
+
+}
